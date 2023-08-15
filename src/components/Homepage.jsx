@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import axios from "axios";
+import axios from "https://cdn.jsdelivr.net/npm/axios@1.4.0/+esm";
 import CreateCv from "./CreateCv";
 import { useNavigate } from "react-router-dom";
 import "./Homepage.css";
