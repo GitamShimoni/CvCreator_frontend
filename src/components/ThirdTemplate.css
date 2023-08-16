@@ -1,4 +1,4 @@
-.template3-container {
+#template3-container {
   background: linear-gradient(
     30deg,
     rgb(255, 255, 255) 0%,
@@ -15,7 +15,7 @@
   overflow: hidden;
   z-index: 0;
 }
-.template3-container::before {
+#template3-container::before {
   content: "";
   z-index: -1;
   position: absolute;
@@ -29,7 +29,7 @@
     rgba(237, 158, 29, 1) 100%
   );
 }
-.template3-container::after {
+#template3-container::after {
   content: "";
   z-index: -2;
   position: absolute;

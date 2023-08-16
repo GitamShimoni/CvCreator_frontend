@@ -32,6 +32,8 @@ const MyCvs = () => {
       .then(({ data }) => setUser([data]))
       .catch((err) => console.log(err));
   }, [refresh]);
+  // console.log(user, "This is the user");
+  // console.log(infos, "THESE ARE THE INFOS");
   useEffect(() => {
     axios
       .post(
