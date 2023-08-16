@@ -30,7 +30,7 @@ const ThirdTemplate = ({ user, info }) => {
   //   console.log(info);
 
   const convertHtmlToPdf = () => {
-    const input = document.getElementById("template2-container");
+    const input = document.getElementById("template3-container");
     const pxWidth = input.offsetWidth;
     const pxHeight = input.offsetHeight;
 
@@ -52,7 +52,7 @@ const ThirdTemplate = ({ user, info }) => {
       <button className="alltemplate-button" onClick={convertHtmlToPdf}>
         Convert to PDF
       </button>
-      <div className="template3-container">
+      <div id="template3-container">
         <div className="template3-top-container">
           <div className="template3-img-container">
             <img

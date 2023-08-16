@@ -31,7 +31,7 @@ const SecondTemplate = ({ user, info }) => {
       <button className="alltemplate-button" onClick={convertHtmlToPdf}>
         Convert to PDF
       </button>
-      <div className="template2-container">
+      <div id="template2-container">
         <div className="template2-left-part">
           <div className="template2-topleft-part">
             <div className="template2-img-container">

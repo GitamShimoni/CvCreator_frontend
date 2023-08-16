@@ -3,6 +3,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Host from "../utils/routes";
+import LoginHintBubble from "./LoginHintBubble";
 
 const Login = ({ clicked, setClicked }) => {
   const navigate = useNavigate();
@@ -22,12 +23,14 @@ const Login = ({ clicked, setClicked }) => {
       localStorage.setItem("token", token);
       navigate("/");
     } catch (err) {
+      alert("Wrong Credentials");
       console.log(err.response.data);
     }
   };
   return (
     <>
       <div id="login-container">
+        <LoginHintBubble />
         <div id="login-inner">
           <h1 id="login-tittle">Log in</h1>
           <form onSubmit={(e) => handleSubmitForm(e)}>
