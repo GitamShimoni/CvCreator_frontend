@@ -37,7 +37,7 @@ const MyCvs = () => {
   useEffect(() => {
     axios
       .post(
-        "http://localhost:5000/info/fetchcvinfo",
+        `${Host}/info/fetchcvinfo`,
         {},
         {
           headers: {
