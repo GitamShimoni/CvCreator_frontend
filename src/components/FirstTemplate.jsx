@@ -1,4 +1,3 @@
-import axios from "axios";
 import { useState, useEffect } from "react";
 import "./FirstTemplate.css";
 import html2canvas from "html2canvas";
